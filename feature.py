@@ -41,7 +41,7 @@ driver_stats_fv = FeatureView(
     # The unique name of this feature view. Two feature views in a single
     # project cannot have the same name
     name="driver_hourly_stats",
-    description="FEATURE STORE TEST"
+    description="DESCRIPTION_TEST driver_hourly_stats"
     # The list of entities specifies the keys required for joining or looking
     # up features from this feature view. The reference provided in this field
     # correspond to the name of a defined entity (or entities)
@@ -57,7 +57,7 @@ driver_stats_fv = FeatureView(
     # for both materialization of features into a store, and are used as references
     # during retrieval for building a training dataset or serving features
     schema=[
-        Field(name="CONV_RATE", dtype=Float32,tags={"team": "driver_performance"}),
+        Field(name="CONV_RATE", dtype=Float32),
         Field(name="ACC_RATE", dtype=Float32),
         Field(name="AVG_DAILY_TRIPS", dtype=Int64),
     ],
