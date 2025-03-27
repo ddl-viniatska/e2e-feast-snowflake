@@ -4,7 +4,8 @@ from domino.data_sources import DataSourceClient
 ds = DataSourceClient().get_datasource("anna")
 
 # res is a simple wrapper of the query result
-res = ds.query("select * from {{table_reference}}")
+res = ds.query("select * from DIABETES")
 
 # to_pandas() loads the result into a pandas dataframe
 df = res.to_pandas()
+print(df)
